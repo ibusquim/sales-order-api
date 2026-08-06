@@ -1,0 +1,12 @@
+CREATE ROLE ApiAppRole;
+CREATE ROLE DataAnalystRole;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON Cliente TO ApiAppRole;
+GRANT SELECT, INSERT, UPDATE, DELETE ON Produto TO ApiAppRole;
+GRANT SELECT, INSERT, UPDATE, DELETE ON Pedido TO ApiAppRole;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ItemPedido TO ApiAppRole;
+
+GRANT SELECT ON Cliente TO DataAnalystRole;
+GRANT SELECT ON Produto TO DataAnalystRole;
+GRANT SELECT ON Pedido TO DataAnalystRole;
+GRANT SELECT ON ItemPedido TO DataAnalystRole;
