@@ -24,7 +24,7 @@ public class Pedido {
     @Column(name = "Status", nullable = false, insertable = false)
     private String status;
 
-    @Column(name = "Total", nullable = false, insertable = false)
+    @Column(name = "Total", nullable = false)
     private BigDecimal total;
 
     public Pedido() {}
